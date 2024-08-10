@@ -1,0 +1,30 @@
+Types of DBMS and Their Explanation
+Hierarchical DBMS:
+
+Explanation: In a Hierarchical DBMS, data is organized in a tree-like structure where each record has a single parent and can have multiple children, resembling a parent-child relationship. This type is useful for applications with a clear hierarchy, such as organizational structures or file systems.
+Example: IBM's Information Management System (IMS).
+Network DBMS:
+
+Explanation: The Network DBMS uses a more flexible model where each record can have multiple parent and child records, forming a graph structure. This allows for more complex relationships between data elements compared to the hierarchical model.
+Example: Integrated Data Store (IDS).
+Relational DBMS (RDBMS):
+
+Explanation: In an RDBMS, data is stored in tables (or relations) that are linked by keys. It uses Structured Query Language (SQL) for data manipulation and is the most widely used type of DBMS today. RDBMS supports operations like select, insert, update, and delete.
+Example: MySQL, PostgreSQL, Oracle Database.
+
+Object-Oriented DBMS (OODBMS):
+
+Explanation: An OODBMS integrates object-oriented programming principles with database technology. Data is stored as objects, similar to how they are represented in object-oriented programming languages. This model is well-suited for applications that require complex data representations, such as CAD/CAM systems or multimedia databases.
+Example: db4o, ObjectDB.
+Document-Oriented DBMS (NoSQL):
+
+Explanation: A Document-Oriented DBMS, often categorized under NoSQL databases, stores data in document formats like JSON or XML. This type is highly flexible and scalable, making it ideal for handling unstructured or semi-structured data in web applications, big data, and real-time analytics.
+Example: MongoDB, CouchDB.
+Columnar DBMS:
+
+Explanation: Columnar DBMS stores data in columns rather than rows. This structure is optimized for read-heavy operations and is particularly useful in data warehousing and analytics, where queries often target specific columns.
+Example: Apache Cassandra, HBase.
+Key-Value DBMS:
+
+Explanation: In a Key-Value DBMS, data is stored as key-value pairs, where each key is unique and maps to a specific value. This model is simple and highly scalable, making it suitable for distributed systems and caching solutions.
+Example: Redis, Amazon DynamoDB.

@@ -1,0 +1,16 @@
+A Database Management System (DBMS) is software that enables users to create, manage, and interact with databases. It provides a systematic and organized way to store, retrieve, and manipulate data. A DBMS acts as an intermediary between the user and the database, ensuring that data is consistently and securely managed.
+
+Need for DBMS
+Data Organization: DBMS organizes data into structured formats, making it easier to manage and retrieve data efficiently.
+
+Data Integrity: It enforces rules and constraints to ensure that data remains accurate and consistent across the database.
+
+Data Security: DBMS provides security features such as user authentication and access control to protect data from unauthorized access.
+
+Data Redundancy Control: It minimizes data redundancy by ensuring that the same data is not unnecessarily duplicated, saving storage space and avoiding inconsistencies.
+
+Concurrent Access: DBMS allows multiple users to access and modify data simultaneously while maintaining data integrity.
+
+Backup and Recovery: It offers tools for automatic backup and recovery, ensuring data can be restored in case of failure.
+
+Query Processing: DBMS provides a query language, like SQL, that allows users to interact with the database easily, retrieving and modifying data as needed.

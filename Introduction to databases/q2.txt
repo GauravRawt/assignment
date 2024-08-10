@@ -1,0 +1,11 @@
+File-Based Storage System
+A file-based storage system is a method of storing and managing data using files within a computer's file system. Data is organized into files, which are stored in directories (or folders) on a storage device such as a hard drive. Each file can contain text, images, or other types of data, and it is accessed and managed through the operating system.
+
+Major Challenge: Data Redundancy and Inconsistency
+One of the major challenges of a file-based storage system is data redundancy and inconsistency.
+
+Data Redundancy: The same data might be stored in multiple files or locations, leading to wasted storage space and making data management more complex.
+
+Data Inconsistency: When the same data is stored in multiple places, there is a risk of data becoming inconsistent. For example, if a customer’s address is updated in one file but not in another, the system will have conflicting information, leading to errors and unreliable data.
+
+These challenges make file-based storage systems less efficient and harder to manage, especially as the amount of data grows.

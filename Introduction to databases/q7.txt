@@ -1,0 +1,14 @@
+3-Schema Architecture
+The 3-Schema Architecture is a framework for organizing the structure and operation of a database system into three levels, each with a different focus. This architecture helps separate the database's physical storage from its logical and conceptual design, improving flexibility and manageability
+
+Internal Schema (Physical Level):
+Explanation: The internal schema defines how data is physically stored in the database, including details like file structures, indexing, and data storage methods. It focuses on optimizing storage space and access speed.
+Example: How records are stored on a disk, including the data format, compression, and storage blocks.
+
+Conceptual Schema (Logical Level):
+Explanation: The conceptual schema provides a logical view of the entire database, independent of how data is physically stored. It describes the structure of the data, including tables, relationships, and constraints, without focusing on physical storage.
+Example: Defining tables, columns, data types, and relationships (e.g., primary and foreign keys) in a database.
+
+External Schema (View Level):
+Explanation: The external schema, or view level, defines how users or applications interact with the data. Different users can have different views of the database, showing only the data relevant to them, while hiding the rest.
+Example: A customer service representative might see a customer's order history, while a financial analyst might see only financial data, all drawn from the same underlying database.

@@ -1,0 +1,19 @@
+1. Data Redundancy and Inconsistency:
+Challenge: In file-based systems, the same data might be stored in multiple locations, leading to redundancy and inconsistencies when the data is updated in one place but not in another.
+Solution by DBMS: DBMS centralizes data storage, ensuring that data is stored only once and accessed by multiple applications. This eliminates redundancy and maintains data consistency.
+
+2. Data Isolation
+Challenge: In traditional file systems, data is scattered across different files and formats, making it difficult to access and retrieve related data efficiently.
+Solution by DBMS: DBMS organizes data into tables and relationships, allowing for easier data integration and retrieval through structured queries.
+
+3. Difficulty in Accessing Data:
+Challenge: Retrieving specific data from file-based systems often requires custom programs, making data access complex and time-consuming.
+Solution by DBMS: DBMS provides powerful query languages (like SQL) that allow users to easily retrieve, update, and manipulate data without needing extensive programming knowledge.
+
+4.Data Security:
+Challenge: File-based systems often lack proper security measures, making sensitive data vulnerable to unauthorized access and breaches.
+Solution by DBMS: DBMS offers robust security features, including user authentication, access control, and encryption, ensuring that only authorized users can access and manipulate the data.
+
+5.Data Integrity:
+Challenge: Ensuring data accuracy and consistency across a system was difficult with file-based storage, as there were no mechanisms to enforce data integrity rules.
+Solution by DBMS: DBMS enforces data integrity through constraints (like primary keys, foreign keys, and unique constraints) and transactions, ensuring that the data adheres to predefined rules and remains consistent.
