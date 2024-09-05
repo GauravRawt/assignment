@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media and Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+        .video-audio {
+            margin: 20px 0;
+        }
+        .iframe-container {
+            margin: 20px 0;
+        }
+        .form-container {
+            margin: 20px 0;
+        }
+        .form-container input {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form-container label {
+            display: block;
+            margin: 5px 0;
+        }
+        .form-container select {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form-container .error {
+            color: red;
+            font-size: 0.875em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Image Gallery -->
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/200" alt="Image 1">
+        <img src="https://via.placeholder.com/200" alt="Image 2">
+        <img src="https://via.placeholder.com/200" alt="Image 3">
+    </div>
+
+    <!-- Video and Audio -->
+    <h2>Video and Audio</h2>
+    <div class="video-audio">
+        <video controls autoplay loop>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio controls autoplay loop>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <!-- Embedded Wikipedia Page -->
+    <h2>PhysicsWallah Wikipedia Page</h2>
+    <div class="iframe-container">
+        <iframe src="https://en.wikipedia.org/wiki/PhysicsWallah" width="100%" height="500px" frameborder="0"></iframe>
+    </div>
+
+    <!-- Sign-Up and Sign-In Forms -->
+    <div class="form-container">
+        <h2>Sign-Up Form</h2>
+        <form id="signUpForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required minlength="3">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required minlength="3">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required min="0" max="150">
+            <label>Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <label>
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to the terms and conditions
+            </label>
+            <input type="submit" value="Sign Up">
+        </form>
+
+        <h2>Sign-In Form</h2>
+        <form id="signInForm">
+            <label for="signinEmail">Email:</label>
+            <input type="email" id="signinEmail" name="signinEmail" required>
+            <label for="signinPassword">Password:</label>
+            <input type="password" id="signinPassword" name="signinPassword" required minlength="6">
+            <input type="submit" value="Sign In">
+        </form>
+    </div>
+
+    <script>
+        // Validate Sign-Up Form
+        document.getElementById('signUpForm').addEventListener('submit', function(event) {
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

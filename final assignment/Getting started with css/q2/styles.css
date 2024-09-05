@@ -1,0 +1,20 @@
+
+.text__paragraph {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.text__paragraph--primary {
+    color: blue;
+    font-weight: bold;
+}
+
+.text__paragraph--secondary {
+    color: gray;
+    font-style: italic;
+}
+
+.text__paragraph--highlight {
+    background-color: yellow;
+    color: black;
+    padding: 5px;
+}

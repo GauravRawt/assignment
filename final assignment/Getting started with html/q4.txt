@@ -1,0 +1,7 @@
+Tag: In HTML, a tag is a keyword or name enclosed in angle brackets (< >) that defines the structure and content of a web page. Tags are used to create elements, which are the building blocks of HTML documents.
+
+Example: <p> is a paragraph tag.
+
+Element: An element in HTML is the combination of a start tag, content, and an end tag (if required). Elements define how content should be displayed on the web page.
+
+Example: <p>This is a paragraph element.</p>

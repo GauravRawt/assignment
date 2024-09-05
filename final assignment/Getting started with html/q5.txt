@@ -1,0 +1,2 @@
+The DOCTYPE declaration in HTML is a statement that defines the version of HTML used in the document. It must be the first line in an HTML document. It helps the browser understand how to render the page. The DOCTYPE for HTML5 is:
+<!DOCTYPE html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Contents</title>
+    <style>
+        ul {
+            list-style-type: none; /* Remove default bullet points */
+            padding-left: 20px; /* Indent the nested lists */
+        }
+
+        ul li {
+            padding: 2px 0; /* Space between list items */
+        }
+
+        /* Styles for different list levels */
+        ul li::before {
+            content: "•"; /* Bullet for main list */
+            padding-right: 8px;
+            font-weight: bold;
+        }
+
+        ul ul li::before {
+            content: "◦"; /* Bullet for sub-list */
+            padding-right: 8px;
+            font-weight: normal;
+        }
+
+        ul ul ul li::before {
+            content: "▪"; /* Bullet for sub-sub-list */
+            padding-right: 8px;
+            font-weight: lighter;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue; /* Link color */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Table of Contents</h1>
+    <ul>
+        <li><a href="#">Part 1: Introduction</a></li>
+        <li><a href="#">Part 2: Getting Started</a>
+            <ul>
+                <li><a href="#">2.1 Installing the Software</a></li>
+                <li><a href="#">2.2 Creating a New Project</a>
+                    <ul>
+                        <li><a href="#">2.2.1 Project Templates</a></li>
+                        <li><a href="#">2.2.2 Customizing Settings</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">2.3 Exploring the Interface</a>
+                    <ul>
+                        <li><a href="#">2.3.1 Toolbar Features</a></li>
+                        <li><a href="#">2.3.2 Panel Layout</a>
+                            <ul>
+                                <li><a href="#">2.3.2.1 Docking Panels</a></li>
+                                <li><a href="#">2.3.2.2 Tabbed Interface</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Part 3: Advanced Topics</a>
+            <ul>
+                <li><a href="#">3.1 Working with Plugins</a>
+                    <ul>
+                        <li><a href="#">3.1.1 Installing Plugins</a></li>
+                        <li><a href="#">3.1.2 Plugin Configuration</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">3.2 Customizing the UI</a>
+                    <ul>
+                        <li><a href="#">3.2.1 Changing Themes</a></li>
+                        <li><a href="#">3.2.2 Configuring Shortcuts</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">3.3 Optimizing Performance</a>
+                    <ul>
+                        <li><a href="#">3.3.1 Caching Strategies</a></li>
+                        <li><a href="#">3.3.2 Resource Minification</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Part 4: Conclusion</a></li>
+    </ul>
+</body>
+</html>
